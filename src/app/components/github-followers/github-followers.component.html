@@ -1,3 +1,10 @@
-<p>
-  github-followers works!
-</p>
+<ul class="list-unstyled">
+  <li class="media" *ngFor="let follower of followers">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">
+        <a [routerLink]="['/followers', follower.id, follower.login]">{{ follower.login }}</a>
+      </h5>
+      <a href="{{ follower.html_url }}">{{ follower.html_url }}</a>
+    </div>
+  </li>
+</ul>
