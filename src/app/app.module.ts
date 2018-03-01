@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { GithubFollowersComponent } from './components/github-followers/github-followers.component';
 import { AboutComponent } from './components/about/about.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AboutComponent } from './components/about/about.component';
     AppComponent,
     HomeComponent,
     GithubFollowersComponent,
-    AboutComponent
+    AboutComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule
