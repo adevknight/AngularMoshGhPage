@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { GithubFollowersComponent } from './components/github-followers/github-followers.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { GithubFollowersService } from './services/github-followers.service';
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
       { path: 'followers', component: GithubFollowersComponent }
     ])
   ],
-  providers: [],
+  providers: [
+    GithubFollowersService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
