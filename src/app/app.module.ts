@@ -1,3 +1,4 @@
+import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -21,6 +22,7 @@ import { GithubFollowersService } from './services/github-followers.service';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'followers', component: GithubFollowersComponent }
