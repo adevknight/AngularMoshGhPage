@@ -36,3 +36,15 @@
    > git config --global credential.helper wincred
 
 7) DONE, to view your website, go to https://<GitHubUsername>.github.io/<GitHubRepoName>/
+
+TIPS:
+- Add shortcut for Publishing to GitHub Pages by add following line to 'package.json':
+    
+    scripts: {
+        ...
+        ...
+        "deploy:ghp": "ng build --prod --base-href='https://adevknight.github.io/AngularMoshGhPage/' && ngh"
+    }
+  
+  THEN RUN
+    > npm run deploy:ghp
